@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="uk">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f8d3ce"><meta name="robots" content="noindex, nofollow"><meta name="description" content="Кілька запитань про тебе та подарунок на твій вибір."><title>Дещо для тебе</title><link rel="stylesheet" href="style.css"></head>
+<body><div class="ambient" aria-hidden="true"><span>🍂</span><span>🍁</span><span>🍂</span><span>🍁</span><span>🍂</span><span>🍁</span></div>
+<header><a class="brand" href="./"><span>для тебе, з теплом</span> <i>♡</i></a><span class="tiny">ТУТ ЖИВУТЬ КОТИКИ</span></header>
+<main>
+
+<section id="intro" class="screen">
+<div class="hero-copy"><div class="cat-crown" aria-hidden="true"><span class="cat-sprite cat-0"></span><span class="cat-sprite cat-1"></span></div><div class="paper-label">трохи тепла для тебе</div><span class="intro-sketch" aria-hidden="true">✉</span><p class="hand">привіт, це тобі</p>
+<p class="lead">Котики принесли три запитання. А ще квіти, солодощі й місце для твого власного бажання.</p>
+<button class="primary" id="start">Відкрити <span>♡</span></button><button class="mood-button" id="littleJoke" type="button">✧ А якщо я натисну сюди?</button><p class="micro">без правильних відповідей · можна пропускати</p></div>
+</section>
+<section id="quest" class="screen" hidden><div class="cat-crown" aria-hidden="true"><span class="cat-sprite cat-0"></span><span class="cat-sprite cat-1"></span></div>
+<div class="quest-top"><span class="section-tag">КОТЯЧА ПОШТА</span><span id="progressCount">01 / 05</span></div><div class="steps" aria-label="Прогрес"><span></span><span></span><span></span><span></span><span></span></div>
+<span class="margin-doodle" aria-hidden="true">♡</span><div id="questionArt" class="question-art" aria-hidden="true">↺</div><p class="hand" id="stepLabel"></p><h1 id="question" tabindex="-1"></h1><p class="lead" id="hint"></p>
+<form id="wishForm"><div id="choices" class="choices"></div>
+<div id="customWrap" hidden><label for="customAnswer">Місце для твоєї історії <span id="charCount">0 / 1500</span></label><textarea id="customAnswer" maxlength="1500" placeholder="Напиши, як це у тебе…"></textarea></div>
+<div id="detailWrap" hidden><label id="detailLabel" for="detail">Маленька підказка для мене</label><textarea id="detail" maxlength="800" placeholder="Які квіти чи солодощі? А може, щось зовсім інше?"></textarea></div>
+<div id="messageWrap" hidden><label for="message">Коментар до замовлення?</label><textarea id="message" maxlength="1000" placeholder="Наприклад: тільки не цукерки з лікером. Або будь-яке інше уточнення."></textarea></div>
+<div id="summary" class="summary" hidden></div><p id="status" role="status" aria-live="polite"></p><button id="backupCopy" type="button" class="back" hidden>Скопіювати відповіді</button>
+<div class="actions"><button type="button" class="back" id="back">← Назад</button><button class="primary" id="next" type="submit">Далі <span>→</span></button></div></form>
+<p class="micro" id="privacy">Відповіді можна змінити кнопкою «Назад».</p>
+</section>
+<section id="finish" class="screen" hidden><div class="cat-crown" aria-hidden="true"><span class="cat-sprite cat-0"></span><span class="cat-sprite cat-1"></span></div><div id="finishCat" class="finish-heart cat-sprite cat-0" aria-hidden="true"></div><p class="hand">готово</p><h1>Дякую за відповіді.<br><em>Подарунок обрано.</em></h1><p class="lead" id="finishText"></p><button class="primary" id="copy">Скопіювати відповіді</button><p id="copyStatus" role="status"></p><button class="back" id="restart">Пройти ще раз ↻</button></section>
+<div class="bottom-note"><span>✧</span> доставлено м’якими лапками <span>✧</span></div>
+</main><div id="effects" aria-hidden="true"></div><div id="toast" class="toast" role="status" aria-live="polite" hidden></div><footer><span>дещо для тебе</span><span>без особливого приводу ✦</span></footer><script src="app.js"></script></body></html>
